@@ -30,13 +30,37 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+You build a class component by declaring a class and extending it from React.Component. You can make it stateful by declaring this.state inside of the constructor function and setting it equal to an object containing all of your state properties.
+
 2. Describe the different phases of the component lifecycle.
+
+The mounting (birth) stage is when the component is initially rendered to the page. During the mounting phase is when the constructor function is run and all state and props are initialized before being rendered.
+
+The updating (growth) stage is when the component's state or props changes, and the component's render function is called again in order to reflect those changes on the DOM.
+
+The unmounting (death) stage is when the component is unmounted from the DOM and no longer needs to be rendered. Any state that is held inside the component is also gone and will be reinitialized to their default values if the component is mounted again.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+The most commonly used class component lifecycle methods are: constructor, render, componentDidMount, componentDidUpdate, componentWillUnmount.
+
+constructor: Calls super in order to inherit the attributes of React.Component, and also initializes any state that may need to be kept. Constructor is called each time the component mounts.
+
+render: Displays the component in the DOM. Render is called each time the component mounts and updates.
+
+componentDidMount: Used to run any side effects such as async function calls or adding event listeners to the DOM. ComponentDidMount is called each time the component mounts.
+
+componentDidUpdate: Used to run any side effects such as async function calls or adding event listeners to the DOM. ComponentDidUpdate is called each time the component updates.
+
+componentWillUnmount: Used to clean up any side effects that require clean up such as removing an event listener from the DOM. componentWillUnmount is called just before the component is unmounted.
+
 4. Define stateful logic.
 
+Stateful logic is when you are using state in evaluating an expression or calling a function. Common examples would be a changeHandler or a state setter method. Custom hook are an example of abstracting stateful logic out of your component.
+
 5. Describe how to test a React component with React Testing Library.
+
+You can test a React component using the RTL by testing if it is displaying the correct elements or text on screen. You can also fire custom events in order to test that your event handlers are working correctly. This is mostly used for unit and/or integration testing, where you are not testing your entire app, but only one or a few components at a time.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
