@@ -251,3 +251,37 @@ pre {
   color: #0e101c;
   border-bottom: 2px solid !important;
 }
+
+.light-mode {
+  background-color: white;
+}
+
+.light-mode .plant-details {
+  color: black;
+}
+
+.light-mode h2, .light-mode h1 {
+  color: black;
+}
+
+.light-mode form {
+  background-color: white;
+}
+
+.light-mode label {
+  color: black;
+}
+
+.light-mode input {
+  border-color: black;
+}
+
+.light-mode-toggle {
+  color: black;
+  cursor: pointer;
+}
+
+input#plant-search {
+  width: 500px;
+  margin: 10px auto;
+}

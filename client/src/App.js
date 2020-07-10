@@ -50,7 +50,7 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <div onClick={toggleMode} className='dark-mode-toggle'>dark mode</div>
+              <div onClick={toggleMode} className={lightMode ? 'light-mode-toggle toggled' : 'light-mode-toggle'}>light mode: {lightMode ? 'on' : 'off'}</div>
             </li>
           </ul>
         </nav>
